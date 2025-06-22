@@ -1,0 +1,37 @@
+{
+  "name": "dark-chat-room",
+  "version": "1.0.0",
+  "description": "A modern, mobile-responsive real-time chat web application with dark theme and video calling",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "ws": "^8.18.2"
+  },
+  "keywords": [
+    "chat",
+    "real-time",
+    "video-call",
+    "webrtc",
+    "dark-theme",
+    "responsive",
+    "javascript",
+    "html5",
+    "css3"
+  ],
+  "author": "Dark Chat Room Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/dark-chat-room.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/dark-chat-room/issues"
+  },
+  "homepage": "https://github.com/yourusername/dark-chat-room#readme"
+}

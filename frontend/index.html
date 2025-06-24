@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VideoCall App</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/14649/14649051.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div id="name-modal" class="modal-overlay" style="display: none;">
+        <div class="modal-content">
+            <h2>Enter Your Name</h2>
+            <input type="text" id="name-input-modal" placeholder="Your Name">
+            <button id="join-btn-modal">Join Call</button>
+        </div>
+    </div>
+    <div class="container">
+        <div id="home-container">
+            <h1><i class="fa-solid fa-video"></i> Video Meet</h1>
+            <input type="text" id="name-input" placeholder="Enter your name">
+            <button id="create-room-btn">Create Room</button>
+            <div id="room-link-container" style="display: none;">
+                <p>Share this link to invite others:</p>
+                <input type="text" id="room-link" readonly>
+            </div>
+        </div>
+
+        <div id="video-chat-container" style="display: none;">
+            <div class="video-container">
+                <video id="localVideo" autoplay muted></video>
+                <div id="remote-videos"></div>
+            </div>
+            <div class="controls">
+                <button id="mic-btn" class="control-btn">
+                    <i class="fa-solid fa-microphone"></i>
+                </button>
+                <button id="video-btn" class="control-btn">
+                    <i class="fa-solid fa-video"></i>
+                </button>
+                <button id="screen-share-btn" class="control-btn">
+                    <i class="fa-solid fa-desktop"></i>
+                </button>
+                <button id="endCall" class="control-btn" style="background-color: #ff453a;">
+                    <i class="fa-solid fa-phone-slash"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
